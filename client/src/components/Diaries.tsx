@@ -245,7 +245,7 @@ export class Diaries extends React.PureComponent<DiariesProps, DiariesState> {
               </Grid.Column>
               <Grid.Column width={12} verticalAlign="middle">
                 {todo.urlImage && (
-                  <Image src={todo.urlImage} size="big" wrapped type />
+                  <Image src={todo.urlImage} size="medium" wrapped type />
                 )}
               </Grid.Column>
               <Grid.Column width={12} verticalAlign="middle">

@@ -67,7 +67,7 @@ logger.info('User was authorized', {
 
 ![Alt text](images/diary_log.png?raw=true "Log Group")
 
-![Alt text](images/diary_streamlog.png?raw=true "stream log")
+![Alt text](images/diary_logsteam.png?raw=true "stream log")
 
 ![Alt text](images/diary_logconsole.png?raw=true "Log For 1 Function")
 

@@ -4,9 +4,9 @@ import * as middy from 'middy'
 import { cors } from 'middy/middlewares'
 import { CreateDiaryRequest } from '../../requests/CreateDiaryRequest'
 import { getUserId } from '../utils';
-import { createDiary } from '../../helpers/diary'
+import { createDiary } from '../../businessLogic/diary'
 import { DiaryItem } from '../../models/DiaryItem'
-import { createAttachmentPresignedUrl } from '../../helpers/diary'
+import { createAttachmentPresignedUrl } from '../../businessLogic/diary'
 import { getAttachmentUrl } from '../../helpers/attachmentUtils'
 import * as uuid from 'uuid'
 

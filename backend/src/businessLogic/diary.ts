@@ -1,5 +1,5 @@
-import { DiaryAccess } from './diaryAccess'
-import { generatePresignedUrl } from './attachmentUtils';
+import { DiaryAccess } from '../dataLayer/diaryAccess'
+import { generatePresignedUrl } from '../helpers/attachmentUtils';
 import { DiaryItem } from '../models/DiaryItem'
 import { CreateDiaryRequest } from '../requests/CreateDiaryRequest'
 import { UpdateDiaryRequest } from '../requests/UpdateDiaryRequest'

@@ -87,6 +87,3 @@ npm install
 npm run start
 ```
 
-This should start a development server with the React application that will interact with the serverless TODO application.
-
-If we have problem with ERR_OSSL_EVP_UNSUPPORTED, please add this command before `npm run start` : `export NODE_OPTIONS=--openssl-legacy-provider`

@@ -1,30 +1,28 @@
 # About
 
-Allow user to receive email in specific time !
+Allow user to write diary
 
 # Functionality of the application
 
-This application will allow creating/removing/updating/fetching/searching mail items. Each mail item can optionally have an attachment image. 
-Each user only has access to mail items that they have created.
+This application will allow creating/removing/updating/fetching/searching diary items.
+Each user only has access to diary items that they have created.
 
-Mail item will be sent to user's email in specific time (may be 5 minutes later).
 
-* Note : When you put the new email, please help me verify it (aws will send you an email). Because this account is under SandBox. More infomation <a href='https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html'>SandBox</a>
 
 * Get all item and search function !
-![Alt text](images/all-search-function.png?raw=true "Get All and Search")
+![Alt text](images/diary_home.png?raw=true "Get All and Search")
 
 * Create new item function !
-![Alt text](images/create.png?raw=true "Create")
+![Alt text](images/diary_create.png?raw=true "Create")
 
 * Update item function !
-![Alt text](images/update.png?raw=true "Update")
+![Alt text](images/diary_update.png?raw=true "Update")
 
-* Mail sent via SES service !
-![Alt text](images/send-mail.png?raw=true "Send")
+* Search item function !
+![Alt text](images/diary_search.png?raw=true "Send")
 
 * All of the backend function 
-![Alt text](images/lb-function.png?raw=true "Send")
+![Alt text](images/diary-function.png?raw=true "Send")
 
 # Frontend
 
@@ -33,12 +31,12 @@ The `client` folder contains a web application that can use the API that should 
 This frontend should work with your serverless application once it is developed, you don't need to make any changes to the code. The only file that you need to edit is the `config.ts` file in the `client` folder. This file configures your client application just as it was done in the course and contains an API endpoint and Auth0 configuration:
 
 ```ts
-const apiId = `i043145mii`
+const apiId = `uplk9vxj2k`
 export const apiEndpoint = `https://${apiId}.execute-api.us-east-1.amazonaws.com/dev`
 
 export const authConfig = {
-  domain: `dev-d9yy841o.us.auth0.com`,            // Auth0 domain
-  clientId: `L2sbIy0e6bom7sOO7NMIJ9biBLbyOZo5`,          // Auth0 client id
+  domain: `dev-jfzgpwbu.us.auth0.com`,            // Auth0 domain
+  clientId: `yk5dGxdQP7wUhqlofjaCU5xZLXzX6Wzc`,          // Auth0 client id
   callbackUrl: 'http://localhost:3000/callback'
 }
 ```
@@ -48,7 +46,7 @@ export const authConfig = {
 
 ## X-Race Trace
 X-Ray is enabled for every function !
-![Alt text](images/x-ray.png?raw=true "X-Ray Service Map")
+![Alt text](images/diary_xray.png?raw=true "X-Ray Service Map")
 
 ## Logging
 
@@ -67,13 +65,11 @@ logger.info('User was authorized', {
 ```
 
 
-![Alt text](images/log-group.png?raw=true "Log Group")
+![Alt text](images/diary_log.png?raw=true "Log Group")
 
+![Alt text](images/diary_streamlog.png?raw=true "stream log")
 
-![Alt text](images/log-stream.png?raw=true "Log Streaming")
-
-
-![Alt text](images/logging.png?raw=true "Log For 1 Function")
+![Alt text](images/diary_logconsole.png?raw=true "Log For 1 Function")
 
 # How to run the application
 
